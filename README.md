@@ -1,1 +1,37 @@
-# flutter_note
+![Image](assets/1_flutter.png)
+
+
+<img src= assets/2_flutter.png
+width="400" /> </a>
+
+## Flutter Eğitim Notlarım
+
+
+Projede; Flutter hakkında, kişisel notlar bulunmaktadır.
+
+---
+
+
+Bu, repo da [HardwareAndro'un](https://www.youtube.com/playlist?list=PL1k5oWAuBhgXdw1BbxVGxxWRmkGB1C11l) hazırladığı "Flutter eğitim" ile ilgili birtakım analizlerle beraber, belli araştırmalarda çıkardığım notlarım bulunmaktadır.
+
+### Installation
+
+Öncelikle projeyi clonelayın.
+
+```
+https://github.com/Mucahid-Canbey/flutter_note.git
+```
+
+### Usage
+Projeyi cloneladıktan sonra Visual Studio Code programında açınız.
+
+Linux için:
+```
+cd flutter_notes
+code .
+```
+### Contributing
+Pull requestler kabul edilir. Büyük değişiklikler için, lütfen önce neyi değiştirmek istediğinizi tartışmak için bir konu açınız.
+
+### License
+[MIT](https://choosealicense.com/licenses/mit/)
