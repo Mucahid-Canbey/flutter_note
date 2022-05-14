@@ -27,7 +27,7 @@ Projeyi cloneladıktan sonra Visual Studio Code programında açınız.
 
 Linux için:
 ```
-cd flutter_notes
+cd flutter_note
 code .
 ```
 ### Contributing
