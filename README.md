@@ -1,8 +1,9 @@
-![Image](assets/1.png)
+![Image](assets/1_flutter.png)
 
 
-<img src= assets/2.png
-width="400" /> </a>
+<img src= assets/2_flutter.png
+alt="Logo Kuş" width="400" /></a>
+
 
 ## Flutter Eğitim Notlarım
 
