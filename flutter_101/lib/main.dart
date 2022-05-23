@@ -6,6 +6,7 @@ import 'package:flutter_101/101/card_learn.dart';
 import 'package:flutter_101/101/color_learn.dart';
 import 'package:flutter_101/101/container_sized_box.dart';
 import 'package:flutter_101/101/icon_learn.dart';
+import 'package:flutter_101/101/image_learn.dart';
 import 'package:flutter_101/101/padding_learn.dart';
 import 'package:flutter_101/101/scaffold_learn.dart';
 import 'package:flutter_101/101/text_learn.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
             elevation: 0.22,
           )
       ),
-      home:  const CardLearn(title: 'Card Learn',),
+      home:  const ImageLearn(title: 'Image Learn',),
     );
   }
 }
