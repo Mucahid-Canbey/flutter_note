@@ -9,17 +9,24 @@ class ImageLearn extends StatelessWidget {
       appBar: AppBar(),
       body: Column(
         children:  [
+
           SizedBox(
             height: 300,
             width: 400,
-            child: PngImage(path: ImageItem().apple,
-
+            child: PngImage(path: ImageItem().apple, ),
               //fit : BoxFit.scaleDown,
               // fit : BoxFit.fitWidth,
               // fit : BoxFit.fitHeight
-
-            ),
           ),
+          SizedBox(
+            height: 300,
+            width: 400,
+            child: Image.network(
+                "https://elements-cover-images-0.imgix.net/98aa7c09-7eed-417f-9abc-601154e408de?auto=compress%2Cformat&fit=max&w=710&s=209e65ea4acb49ffd30e48695ae58409",
+              errorBuilder: (context, error,stackTrace)=>const Icon (Icons.abc_outlined), // Icon Hata alırsa çıkar
+            ),
+
+          )
         ],
       )
     );
