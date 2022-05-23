@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_101/101/app_bar.dart';
 import 'package:flutter_101/101/button_learn.dart';
+import 'package:flutter_101/101/card_learn.dart';
 import 'package:flutter_101/101/color_learn.dart';
 import 'package:flutter_101/101/container_sized_box.dart';
 import 'package:flutter_101/101/icon_learn.dart';
@@ -23,6 +24,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
       theme: ThemeData.dark().copyWith(
+        cardTheme: CardTheme(
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))
+        ),
         errorColor: ColorItems.porchase,
           appBarTheme: const AppBarTheme(
             centerTitle: true,
@@ -31,7 +35,7 @@ class MyApp extends StatelessWidget {
             elevation: 0.22,
           )
       ),
-      home:  const PaddingLearn(title: 'Padding Learn',),
+      home:  const CardLearn(title: 'Card Learn',),
     );
   }
 }
