@@ -8,9 +8,9 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <excludeFolder url="file://$MODULE_DIR$/flutter_101/.dart_tool" />
-      <excludeFolder url="file://$MODULE_DIR$/flutter_101/build" />
-      <excludeFolder url="file://$MODULE_DIR$/flutter_101/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter Learn/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter Learn/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Flutter Learn/build" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 32 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

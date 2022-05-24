@@ -10,6 +10,7 @@ import 'package:flutter_101/101/image_learn.dart';
 import 'package:flutter_101/101/padding_learn.dart';
 import 'package:flutter_101/101/scaffold_learn.dart';
 import 'package:flutter_101/101/text_learn.dart';
+import 'package:flutter_101/demos/note_demos_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
             elevation: 0.22,
           )
       ),
-      home:  const ImageLearn(title: 'Image Learn',),
+      home:  const NoteDemos(title: 'Demos Learn',),
     );
   }
 }
