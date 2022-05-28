@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_101/101/custom_widget_learn.dart';
 import 'package:flutter_101/101/indicator_learn.dart';
+import 'package:flutter_101/101/list_tile_learn.dart';
 
 import '101/color_learn.dart';
 
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
-          progressIndicatorTheme: ProgressIndicatorThemeData(
+          listTileTheme: const ListTileThemeData(contentPadding: EdgeInsets.zero),
+          progressIndicatorTheme: const ProgressIndicatorThemeData(
             color: Colors.white,
           ),
           cardTheme: CardTheme(
@@ -31,8 +33,8 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.transparent,
             elevation: 0.22,
           )),
-      home: IndicatorLearn(
-        title: 'Indicator Learn',
+      home: const ListTileLearn(
+        title: 'List Tile Learn',
       ),
     );
   }
