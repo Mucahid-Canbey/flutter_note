@@ -1,16 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_101/101/app_bar.dart';
-import 'package:flutter_101/101/button_learn.dart';
-import 'package:flutter_101/101/card_learn.dart';
-import 'package:flutter_101/101/color_learn.dart';
-import 'package:flutter_101/101/container_sized_box.dart';
-import 'package:flutter_101/101/icon_learn.dart';
-import 'package:flutter_101/101/image_learn.dart';
-import 'package:flutter_101/101/padding_learn.dart';
-import 'package:flutter_101/101/scaffold_learn.dart';
-import 'package:flutter_101/101/text_learn.dart';
-import 'package:flutter_101/demos/note_demos_view.dart';
+import 'package:flutter_101/101/custom_widget_learn.dart';
+
+import '101/color_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,7 +29,7 @@ class MyApp extends StatelessWidget {
             elevation: 0.22,
           )
       ),
-      home:  const NoteDemos(title: 'Demos Learn',),
+      home:   CustomWidgetLearn(title: 'Demos Learn',),
     );
   }
 }
