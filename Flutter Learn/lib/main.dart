@@ -4,6 +4,7 @@ import 'package:flutter_101/101/column_row_learn.dart';
 import 'package:flutter_101/101/custom_widget_learn.dart';
 import 'package:flutter_101/101/indicator_learn.dart';
 import 'package:flutter_101/101/list_tile_learn.dart';
+import 'package:flutter_101/101/stack_learn.dart';
 
 import '101/color_learn.dart';
 
@@ -35,8 +36,8 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.transparent,
             elevation: 0.22,
           )),
-      home: const ColumnRowLearn(
-        title: 'Column Row Learn',
+      home: const StackLearn(
+        title: 'Stack Learn',
       ),
     );
   }
