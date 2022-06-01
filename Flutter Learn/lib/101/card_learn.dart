@@ -8,32 +8,35 @@ class CardLearn extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: Column(
-        children:  [
-
-          Card(
-            margin:ProjectMarginCard.marginCard , // Margin Class
+        children: [
+          const Card(
+            margin: ProjectMarginCard.marginCard, // Margin Class
 
             color: Colors.blueAccent,
-            child: SizedBox(height: 100,width: 300,child: Center(child: Text('Ali')),),
-           // shape: StadiumBorder(),
-           // shape: CircleBorder(),
-           //shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-
-          ),
-
-          _CustomCard(
             child: SizedBox(
-              height: 100,width: 300,
-              child: Center(child: Text('Ali')),),),
-
-          Card(
-            color: Theme.of(context).colorScheme.error,
-            child: const SizedBox(height: 100,width: 100,
+              height: 100,
+              width: 300,
+              child: Center(child: Text('Ali')),
+            ),
+            // shape: StadiumBorder(),
+            // shape: CircleBorder(),
+            //shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          ),
+          const _CustomCard(
+            child: SizedBox(
+              height: 100,
+              width: 300,
+              child: Center(child: Text('Ali')),
             ),
           ),
-
+          Card(
+            color: Theme.of(context).colorScheme.error,
+            child: const SizedBox(
+              height: 100,
+              width: 100,
+            ),
+          ),
         ],
-
       ),
     );
   }
@@ -45,9 +48,8 @@ class _CustomCard extends StatelessWidget {
   final Widget child;
   @override
   Widget build(BuildContext context) {
-
     return Card(
-      margin:ProjectMarginCard.marginCard ,
+      margin: ProjectMarginCard.marginCard,
 
       child: child,
       //shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
@@ -55,7 +57,6 @@ class _CustomCard extends StatelessWidget {
   }
 }
 
-
-class ProjectMarginCard{
+class ProjectMarginCard {
   static const marginCard = EdgeInsets.all(10);
 }
