@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_101/product/language/language_items.dart';
 
 import '../product/counter_helo_button.dart';
 
@@ -29,7 +30,9 @@ class _StatefullLearnState extends State<StatefullLearn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text(LanguageItems.welcomeTitle),
+      ),
       floatingActionButton: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
