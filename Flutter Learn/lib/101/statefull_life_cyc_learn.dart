@@ -27,6 +27,14 @@ class _StatefullLifeCycLearnState extends State<StatefullLifeCycLearn> {
   }
 
   @override
+  void dispose() {
+    // ignore: todo
+    // TODO: implement dispose
+    super.dispose();
+    _message = '';
+  }
+
+  @override
   void initState() {
     super.initState();
     _message = widget.message;
