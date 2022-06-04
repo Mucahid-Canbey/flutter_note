@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 class StatefullLifeCycLearn extends StatefulWidget {
@@ -12,13 +10,23 @@ class StatefullLifeCycLearn extends StatefulWidget {
 class _StatefullLifeCycLearnState extends State<StatefullLifeCycLearn> {
   String _message = '';
   late final bool _is0dd;
-  @override
+
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
     _computeName();
   }
 
+  @override
+  void didUpdateWidget(covariant StatefullLifeCycLearn oldWidget) {
+    // TODO: implement didUpdateWidget
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.message != widget.message) {
+      print('c');
+    }
+  }
+
+  @override
   void initState() {
     super.initState();
     _message = widget.message;
@@ -41,7 +49,13 @@ class _StatefullLifeCycLearnState extends State<StatefullLifeCycLearn> {
       appBar: AppBar(title: Text(_message)),
       body: _is0dd
           ? TextButton(onPressed: () {}, child: Text(_message))
-          : ElevatedButton(onPressed: () {}, child: Text(_message)),
+          : ElevatedButton(
+              onPressed: () {
+                setState(() {
+                  _message = 'a';
+                });
+              },
+              child: Text(_message)),
     );
   }
 }

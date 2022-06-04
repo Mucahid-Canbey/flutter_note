@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
             elevation: 0.22,
           )),
       home: const StatefullLifeCycLearn(
-        message: 'MucahiCC',
+        message: 'ses 2',
         title: '',
       ),
     );
