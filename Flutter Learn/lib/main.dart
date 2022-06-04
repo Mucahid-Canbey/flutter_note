@@ -8,6 +8,7 @@ import 'package:flutter_101/101/page_view_learn.dart';
 import 'package:flutter_101/101/stack_learn.dart';
 import 'package:flutter_101/101/statefull_learn.dart';
 import 'package:flutter_101/101/statefull_life_cyc_learn.dart';
+import 'package:flutter_101/101/text_field_learn.dart';
 import 'package:flutter_101/demos/stack_demo_view.dart';
 
 import '101/color_learn.dart';
@@ -37,10 +38,10 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.transparent,
             elevation: 0.22,
           )),
-      home: const StatefullLifeCycLearn(
-        message: 'ses 2',
-        title: '',
-      ),
+      home: TextFieldLearn(
+          //message: 'ses 2',
+          // title: '',
+          ),
     );
   }
 }
