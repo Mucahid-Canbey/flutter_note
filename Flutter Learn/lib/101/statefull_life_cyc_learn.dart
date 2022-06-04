@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 class StatefullLifeCycLearn extends StatefulWidget {
@@ -11,6 +13,12 @@ class _StatefullLifeCycLearnState extends State<StatefullLifeCycLearn> {
   String _message = '';
   late final bool _is0dd;
   @override
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _computeName();
+  }
+
   void initState() {
     super.initState();
     _message = widget.message;
