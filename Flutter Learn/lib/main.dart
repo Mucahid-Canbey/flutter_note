@@ -13,6 +13,7 @@ import 'package:flutter_101/101/statefull_life_cyc_learn.dart';
 import 'package:flutter_101/101/text_field_learn.dart';
 import 'package:flutter_101/demos/color_demos_view.dart';
 import 'package:flutter_101/demos/color_life_cycle_view.dart';
+import 'package:flutter_101/demos/my_colections_demos.dart';
 import 'package:flutter_101/demos/stack_demo_view.dart';
 
 import '101/color_learn.dart';
@@ -42,7 +43,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.transparent,
             elevation: 0.22,
           )),
-      home: const ListViewBuilderLearn(
+      home: const MyCollectionsDemos(
           //message: 'ses 2',
           // title: '',
           ),
