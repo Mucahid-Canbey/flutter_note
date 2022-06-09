@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 
 class ColorDemos extends StatefulWidget {
@@ -25,7 +27,9 @@ class _ColorDemosState extends State<ColorDemos> {
   @override
   void didUpdateWidget(covariant ColorDemos oldWidget) {
     super.didUpdateWidget(oldWidget);
-    if (oldWidget.initialColor != widget.initialColor && widget.initialColor != null) {
+    //print(oldWidget.initialColor != _backgroundColor);  Birinci yöntem
+    //inspect(widget);  ikinci yöntem
+    if (widget.initialColor != _backgroundColor && widget.initialColor != null) {
       chaneBackgroundColor(widget.initialColor!);
     }
   }
