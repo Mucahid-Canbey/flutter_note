@@ -2,52 +2,56 @@ import 'package:flutter/material.dart';
 
 class TextLearnView extends StatelessWidget {
   const TextLearnView({Key? key, required String title}) : super(key: key);
-
+  ProjectKeys get keys => ProjectKeys();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: Center(
+        //  'Column()' Widgetların alt alta durmasını sağlar
         child: Column(
+          // 'mainAxisAlignment: MainAxisAlignment' içeriği hizalar
           mainAxisAlignment: MainAxisAlignment.center,
+
           children: [
-            //Metinsel ifadeleri kullanıcıya gösterdiğimiz görsel nesnedir.
-            //Birinci Text
-            const Text(
-              "Merhaba",
+            Text(
+              ('Örnek Text, ' * 10),
 
-              style: TextStyle(
-                wordSpacing: 3, // Kelimeler arasına boşluk.
-                letterSpacing: 2, // Harflerin ve kelimelerin arasına boşluk.
-                fontSize: 44, // Text Boyutu.
-                fontWeight: FontWeight.w600, // Text kalınlaştırma.
-                decoration: TextDecoration.underline, // Metnin Altını Çizer.
-                fontStyle: FontStyle.italic, // İtalik yazı.
-                color: Colors.redAccent, // Metnin Rengi
-              ),
+              style: const TextStyle(
+                  wordSpacing: 11, //  Kelimeler arasına boşluk.
+                  letterSpacing: 2, //  Harflerin ve kelimelerin arasına boşluk.
+                  fontSize: 22, //  Text boyut.
+                  fontWeight: FontWeight.w600, //  Kalınlaştırma.
+                  decoration: TextDecoration.underline, //  Altını çizer.
+                  fontStyle: FontStyle.italic, //  İtalik yazı.
+                  color: Colors.green, //  Text Renk
+                  backgroundColor: Colors.amberAccent // Arka plan renk.
+                  ),
 
-              maxLines: 2, // Satır belirleme.
+              maxLines: 2, //  Satır belirleme.
               overflow: TextOverflow.ellipsis, // Üç nokta bırakır.
-              textAlign: TextAlign.right, // Text Yönünü belirler.
+              textAlign: TextAlign.center, //  Text yönünü belirler.
             ),
-
-
             Text(
-              "Birinci Text",
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-              textAlign: TextAlign.right,
-              style: ProjectStyles.newStyle,
+              ('Merhaba, ' * 10),
+
+              style: ProjectStyles.welcomeStyle,
+
+              maxLines: 2, //  Satır belirleme.
+              overflow: TextOverflow.ellipsis, // Üç nokta bırakır.
+              textAlign: TextAlign.center, //  Text yönünü belirler.
             ),
-
-
             Text(
-                "İkinci Text",
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-                textAlign: TextAlign.right,
-                style: Theme.of(context).textTheme.headline3?.copyWith(color: Colors.yellow)
-            ),
+              (keys.welcomeKeys * 10),
 
+              style: Theme.of(context).textTheme.headline5?.copyWith(
+                    color: ProjectColors.welcomeColor,
+                  ),
+
+              maxLines: 2, //  Satır belirleme.
+              overflow: TextOverflow.ellipsis, // Üç nokta bırakır.
+              textAlign: TextAlign.center, //  Text yönünü belirler.
+            ),
           ],
         ),
       ),
@@ -55,16 +59,23 @@ class TextLearnView extends StatelessWidget {
   }
 }
 
-
-// TextStle Class
 class ProjectStyles {
-  static TextStyle newStyle = const TextStyle(
-    wordSpacing: 3,
-    letterSpacing: 2,
-    fontSize: 44,
-    fontWeight: FontWeight.w600,
-    decoration: TextDecoration.underline,
-    fontStyle: FontStyle.italic,
-    color: Color.fromARGB(255, 53, 9, 172),
-  );
+  static TextStyle welcomeStyle = const TextStyle(
+      wordSpacing: 11, //  Kelimeler arasına boşluk.
+      letterSpacing: 2, //  Harflerin ve kelimelerin arasına boşluk.
+      fontSize: 22, //  Text boyut.
+      fontWeight: FontWeight.w600, //  Kalınlaştırma.
+      decoration: TextDecoration.underline, //  Altını çizer.
+      fontStyle: FontStyle.italic, //  İtalik yazı.
+      color: Colors.green, //  Text Renk
+      backgroundColor: Colors.amberAccent // Arka plan renk.
+      );
+}
+
+class ProjectColors {
+  static Color welcomeColor = Colors.red;
+}
+
+class ProjectKeys {
+  final String welcomeKeys = 'sos, ';
 }

@@ -1,16 +1,53 @@
-# flutter_101
+![Image](assets/png/1.png)
+# Flutter 101 
 
-A new Flutter project.
+### **Sayfa Yapısı**  :
 
-## Getting Started
+<img src= assets/png/tasarım.png
+alt="Logo Kuş" width="500" /></a>
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+### **Text Widget :**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+</br>
+
+<img src= assets/png/textwidget.png
+alt="Logo Kuş" width="500" /></a>
+
+</br>
+
+> Class Üzerinden Style
+
+
+
+<img src= assets/png/clasStyle.png
+alt="Logo Kuş" width="500" /></a>
+
+</br>
+
+
+> Theme Üzerinedn Style
+
+<img src= assets/png/themeStyle.png
+alt="Logo Kuş" width="650" /></a>
+
+[ Material Design İçin Tıkla ..](https://material.io/design/typography/the-type-system.html#type-scale)
+
+
+
+
+</br>
+
+###  **Container SizeBox Widget :**
+
+
+</br>
+
+<img src= assets/png/containerSizeBox.png
+ width="700" /></a>
+
+ ###  **Button Widget :**
+
+ <img src= assets/png/button.png
+ width="900" /></a>
