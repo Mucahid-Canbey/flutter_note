@@ -74,7 +74,7 @@ class CollectionItems {
 
   CollectionItems() {
     items = [
-      CollectionModel(imagePath: ProjectImages.imageCollection, title: 'Abstract Art', price: 3.4),
+      CollectionModel(imagePath: ProjectI ages.imageCollection, title: 'Abstract Art', price: 3.4),
       CollectionModel(imagePath: ProjectImages.imageCollection, title: 'Abstract Art2', price: 3.4),
       CollectionModel(imagePath: ProjectImages.imageCollection, title: 'Abstract Art3', price: 3.4),
       CollectionModel(imagePath: ProjectImages.imageCollection, title: 'Abstract Art4', price: 3.4),

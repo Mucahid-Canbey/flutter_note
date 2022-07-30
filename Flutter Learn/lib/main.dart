@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.light().copyWith(
           appBarTheme: const AppBarTheme(
         systemOverlayStyle: SystemUiOverlayStyle.dark,
-        centerTitle: true,
+        centerTitle: true,  
         backgroundColor: Colors.transparent,
         elevation: 0,
       )),

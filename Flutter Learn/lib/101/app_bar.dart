@@ -19,7 +19,7 @@ class AppBarLearn extends StatelessWidget {
         // Belirginliği ayarlar
         elevation: 0,
         // default left buton kapatma
-        automaticallyImplyLeading: false,
+        automaticallyImplyLeading: true,
 
         actionsIconTheme: const IconThemeData(color: Colors.yellow, size: 33),
         // Tool bar bölümünün rengi.
