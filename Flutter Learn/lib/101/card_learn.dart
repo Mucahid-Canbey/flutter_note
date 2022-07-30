@@ -7,37 +7,37 @@ class CardLearn extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Column(
-        children: [
-          const Card(
-            margin: ProjectMarginCard.marginCard, // Margin Class
-
-            color: Colors.blueAccent,
-            child: SizedBox(
-              height: 100,
-              width: 300,
-              child: Center(child: Text('Ali')),
-            ),
-            // shape: StadiumBorder(),
-            // shape: CircleBorder(),
-            //shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-          ),
-          const _CustomCard(
-            child: SizedBox(
-              height: 100,
-              width: 300,
-              child: Center(child: Text('Ali')),
-            ),
-          ),
-          Card(
-            color: Theme.of(context).colorScheme.error,
-            child: const SizedBox(
-              height: 100,
-              width: 100,
-            ),
-          ),
-        ],
+body: Column(
+  children: [
+    const Card(
+      // Margin Class
+      margin: ProjectMarginCard.marginCard, 
+      color: Colors.blueAccent,
+      child: SizedBox(
+        height: 100,
+        width: 300,
+        child: Center(child: Text('Ali')),
       ),
+      //Kenarları Oval Yapar
+      //shape: StadiumBorder(),
+      shape: CircleBorder(), // Yuvarlak
+    ),
+    const _CustomCard(
+      child: SizedBox(
+        height: 100,
+        width: 300,
+        child: Center(child: Text('Ali')),
+      ),
+    ),
+    Card(
+      color: Theme.of(context).colorScheme.error,
+      child: const SizedBox(
+        height: 100,
+        width: 100,
+      ),
+    ),
+  ],
+),
     );
   }
 }

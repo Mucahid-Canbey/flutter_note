@@ -29,15 +29,22 @@ class ButtonLearn extends StatelessWidget {
               height: 200,
             ),
             ElevatedButton(
+
                 style: ElevatedButton.styleFrom(
+
                   primary: Colors.yellow,
-                  shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20))),
-                ),
+                  shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(20))),),
+
                 onPressed: () {},
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 20, bottom: 20, right: 40, left: 40),
+                  padding: const EdgeInsets.only(
+                    top: 20, bottom: 20, right: 40, left: 40),
                   child:
-                      Text('Place bid', style: Theme.of(context).textTheme.headline5?.copyWith(color: Colors.black87)),
+                      Text('Place bid', 
+                      style: Theme.of(context).textTheme.headline5?.copyWith(
+                        color: Colors.black87)),
                 ))
           ],
         ),

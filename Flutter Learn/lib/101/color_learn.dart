@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class ColorLearn extends StatelessWidget {
   const ColorLearn({Key? key, required String title}) : super(key: key);
 
@@ -7,7 +8,7 @@ class ColorLearn extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: Container(
-        color:Theme.of(context).errorColor,
+        color: Theme.of(context).errorColor,
         child: Text('data'),
       ),
     );
@@ -15,7 +16,6 @@ class ColorLearn extends StatelessWidget {
 }
 
 class ColorItems {
-
   static Color porchase = const Color(0xffEDBf61);
   static Color sulu = const Color.fromRGBO(198, 237, 97, 1);
 }

@@ -6,7 +6,9 @@ class TextLearnView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text('data'),
+      ),
       body: Center(
         //  'Column()' Widgetların alt alta durmasını sağlar
         child: Column(

@@ -8,24 +8,31 @@ class StatelessLearn extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: Column(
-        children:  [
-          const TitelTextWidget(text: 'mucahid-1'),
-          const TitelTextWidget(text: 'mucahid-2'),
+        children: [
+          const TitelTextWidget(
+            text: 'mucahid-1'),
           _emtyBox(),
-          const TitelTextWidget(text: 'mucahid-3'),
+          const TitelTextWidget(
+            text: 'mucahid-2'),
           _emtyBox(),
-          const TitelTextWidget(text: 'mucahid-4'),
-          const _CustomContainer() ,
-          _emtyBox()
+          const TitelTextWidget(
+            text: 'mucahid-3'),
+          _emtyBox(),
+          const TitelTextWidget
+          (text: 'mucahid-4'),
+          const _CustomContainer(),
         ],
       ),
     );
   }
 
-  //Extract metot kullanımı
-  SizedBox _emtyBox() => const SizedBox(height: 55,);
+  //Basit companetler için StatelessWidget yerine 'Extract' metot
+  SizedBox _emtyBox() => const SizedBox(
+        height: 55,
+      );
 }
 
+//  Dışarıdan parametre almak
 class TitelTextWidget extends StatelessWidget {
   const TitelTextWidget({Key? key, required this.text}) : super(key: key);
 
@@ -46,9 +53,10 @@ class _CustomContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 1,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20), color: Colors.red),
+        borderRadius: BorderRadius.circular(20), 
+        color: Colors.white),
     );
   }
 }
-
